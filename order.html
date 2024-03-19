@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Order Ice Cream</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="icecream.css">
+    </head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Grandma's Ice Cream</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="padding">
+        <h2>Order now!</h2>
+        <p>Please fill out the information below to order.<br>
+            Please view the toppings page before ordering to see what we have in stock.<br>
+            Required fields are marked with an asterisk *.
+        </p>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="name">* Name:</label>
+                <input type="text" name="name" id="name" required="required">
+            <label for="phone">* Phone Number:</label>
+                <input type="tel" name="phone" id="phone" required="required" maxlength="12">
+            <label for="order">* Tell Us What You Want:</label>
+                <textarea name="order" id="order" cols="25" rows="3" required="required"></textarea>
+            <label for="toppings">Chocolate Syrup?:</label>
+                <select size="1" name="toppings" id="toppings">
+                    <option>Chocolate Syrup</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            <input type="submit">
+        </form>
+        </div>   
+    </main>
+    <footer>
+        Copyright &copy; 2024 Grandma's Ice Cream<br>
+        <a href="mailto:clinthancock@davistech.edu">
+            clint.hancock@davistech.edu
+        </a>
+    </footer>
+</div>
+</body>
+</html>
